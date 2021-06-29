@@ -32,8 +32,16 @@
 
 // Store ID: 62144652
 console.log("first hello");
-import axios from 'axios'
-const res = await axios.get("https://app.ecwid.com/api/v3/62144652/products");
-console.log(res);
 
+let request = new XMLHttpRequest();
+request.open("GET", "https://app.ecwid.com/api/v3/62144652/products")
+request.send();
+request.onload = () => {
+    console.log(request);
+    if (request.status == 200) {
+        console.log(JSON.parse(request.response));
+    } else {
+        console.log(`error ${request.status} ${request.statusText}`)
+    }
+}
 console.log("Hello world from github (change)!");
