@@ -36,4 +36,4 @@ import axios from 'axios'
 const res = await axios.get("https://app.ecwid.com/api/v3/62144652/products");
 console.log(res);
 
-console.log("Hello world from github!");
+console.log("Hello world from github (change)!");
