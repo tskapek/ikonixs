@@ -30,4 +30,10 @@
 //     window.alert("Options, changed, product id: " + productid);
 // })
 
-console.log("Hello world from github!")
+// Store ID: 62144652
+
+import axios from 'axios'
+const res = await axios.get("https://app.ecwid.com/api/v3/62144652/products");
+console.log(res);
+
+console.log("Hello world from github!");
