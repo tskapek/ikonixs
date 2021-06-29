@@ -31,7 +31,7 @@
 // })
 
 // Store ID: 62144652
-
+console.log("first hello");
 import axios from 'axios'
 const res = await axios.get("https://app.ecwid.com/api/v3/62144652/products");
 console.log(res);
